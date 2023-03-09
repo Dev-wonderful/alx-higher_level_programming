@@ -1,2 +1,2 @@
 #!/bin/bash
-./$PYFILE
+chmod u+x $PYFILE && ./$PYFILE
