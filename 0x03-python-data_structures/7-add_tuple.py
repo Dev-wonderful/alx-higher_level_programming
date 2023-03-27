@@ -13,6 +13,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
         else:
             lst[id_x] = 0
         id_x += 1
+        if id_x == 2: break
 
     for j in tuple_b:
         if j:
@@ -20,6 +21,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
         else:
             lst[id_y] += 0
         id_y += 1
+        if id_y == 2: break
 
     f_tuple = (lst[0], lst[1])
 
