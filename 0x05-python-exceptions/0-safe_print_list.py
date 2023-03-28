@@ -7,7 +7,7 @@ def safe_print_list(my_list=[], x=0):
             counter += 1
         print()
     except IndexError:
-        print("Index doesn't exist")
+        print()
     else:
         return counter
     finally:
