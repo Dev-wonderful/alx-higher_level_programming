@@ -2,12 +2,13 @@
 def safe_print_division(a, b):
     result = 0
     try:
-        result += a / b
+        if isinstance(a, int) and isinstance(b, int):
+            result += a / b
+        else:
+            assert()
     except ArithmeticError:
         return None
-    except ValueError:
+    except AssertionError:
         return None
-    else:
-        return result
     finally:
         print("Inside result: {}".format(result if result else None))
