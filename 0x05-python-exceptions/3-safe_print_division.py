@@ -5,6 +5,8 @@ def safe_print_division(a, b):
         result += a / b
     except ArithmeticError:
         return None
+    except ValueError:
+        return None
     else:
         return result
     finally:
