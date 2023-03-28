@@ -4,6 +4,7 @@ def safe_print_division(a, b):
     try:
         if isinstance(a, int) and isinstance(b, int):
             result += a / b
+            return result
         else:
             assert()
     except ArithmeticError:
