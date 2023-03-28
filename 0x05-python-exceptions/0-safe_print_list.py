@@ -8,8 +8,6 @@ def safe_print_list(my_list=[], x=0):
         print()
     except IndexError:
         print("Index doesn't exist")
-    except:
-        print("unknown Error")
     else:
         return counter
     finally:
