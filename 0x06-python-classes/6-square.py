@@ -84,7 +84,8 @@ class Square:
         if self.__size == 0:
             print()
 
-        if self.__position[1] > 0 and self.__size > 0:  # horizontal indentation
+        # horizontal indentation
+        if self.__position[1] > 0 and self.__size > 0:
             for pos_y in range(self.__position[1]):
                 print()
 
