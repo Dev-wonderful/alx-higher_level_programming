@@ -14,6 +14,19 @@ class Rectangle:
         self.width = width
         self.height = height
 
+    def __str__(self):
+        """Informal representation of the rectangle object"""
+        s = []
+        if self.__height and self.__width:
+            for h in range(self.__height):
+                for w in range(self.__width):
+                    s.append("#")
+                if h != (self.__height - 1):
+                    s.append("\n")
+            return "".join(s)
+        else:
+            print("")
+
     @property
     def width(self):
         """getter: returns the width(__width)"""
