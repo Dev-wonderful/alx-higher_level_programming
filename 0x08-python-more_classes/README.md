@@ -6,10 +6,11 @@
 * `2-rectangle:`
 * `3-rectangle:`
 
-| Fields | Methods           |
-|--------|-------------------|
- | Width  | getter and setter |
- | Height | getter and setter |
+| Methods           | Fields             |
+|-------------------|--------------------|
+ | getter and setter | getter and setter  |
+ | Area              | height and width   |
+ | Perimeter         | height and width   |
 
 
 ## **This README is under Construction.....**
