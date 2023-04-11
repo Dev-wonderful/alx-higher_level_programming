@@ -5,9 +5,12 @@
 class MyList(list):
     """Inherits List class"""
 
-    def __init__(self, iterable):
+    iterable = []
+
+    def __init__(self, *args):
         """Initialize the derived class"""
-        super().__init__(self, iterable)
+        super().__init__(self, *args)
+	self.iterable = args
 
     def print_sorted(self):
         """Prints the list in a sorted way but doesn't change the list"""
