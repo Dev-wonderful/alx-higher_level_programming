@@ -1,0 +1,2 @@
+#!/bin/bash
+ls "$@" | xargs -I 'file' bash -c "python3 file"

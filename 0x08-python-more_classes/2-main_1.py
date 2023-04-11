@@ -2,7 +2,7 @@
 Rectangle = __import__('2-rectangle').Rectangle
 
 print()
-print("2-main.py")
+print("2-main_1.py")
 print("=========================================")
 
 my_rectangle = Rectangle(2, 4)
