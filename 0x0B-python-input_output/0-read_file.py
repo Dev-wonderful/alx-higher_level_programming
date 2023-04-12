@@ -2,6 +2,7 @@
 
 """A module to read a file"""
 
+
 def read_file(filename=""):
     """A function to read a file
         Args:
