@@ -47,3 +47,5 @@ class Student:
                 Args:
                     json (dict): the dictionary to be used
         """
+        for key, value in json:
+            setattr(self, key, value)
