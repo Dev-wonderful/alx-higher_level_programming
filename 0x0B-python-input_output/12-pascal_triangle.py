@@ -12,6 +12,7 @@ def pascal_triangle(n):
         else:
             row = []
             pre = triangle[i-1]
+            index = 0
             for j in range(len(pre)):
                 if j - 1 >= 0:
                     x = pre[j-1] + pre[j]
@@ -21,6 +22,7 @@ def pascal_triangle(n):
                 if j + 1 < len(pre):
                     x = pre[j+1] + pre[j]
                     row.append(x)
+                    index += 1
                 else:
                     row.append(pre[j])
             triangle.append(row)
