@@ -3,7 +3,7 @@
 """A module to serialize a data (convert to JSON)"""
 
 
-import json
+json = __import__('json')
 
 def to_json_string(my_obj):
     """Serilizing an obj
