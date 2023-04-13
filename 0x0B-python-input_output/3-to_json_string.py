@@ -6,7 +6,7 @@ json = __import__('json')
 
 
 def to_json_string(my_obj):
-    """Serilizing an obj
+    """Serializing an obj
         Args:
             my_obj (object): the object to be serialized
         Returns:
