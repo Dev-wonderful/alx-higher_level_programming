@@ -1,9 +1,8 @@
 #!/usr/bin/python3
+json = __import__('json')
 
 """A module to serialize a data (convert to JSON)"""
 
-
-json = __import__('json')
 
 def to_json_string(my_obj):
     """Serilizing an obj
