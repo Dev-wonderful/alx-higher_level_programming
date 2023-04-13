@@ -4,13 +4,18 @@ lookup = __import__('0-lookup').lookup
 print()
 print("===========================")
 print()
+
+
 class MyClass1(object):
-        pass
+    pass
+
 
 class MyClass2(object):
-        my_attr1 = 3
-        def my_meth(self):
-            pass
+    my_attr1 = 3
+
+    def my_meth(self):
+        pass
+
 
 print(lookup(MyClass1))
 print(lookup(MyClass2))
