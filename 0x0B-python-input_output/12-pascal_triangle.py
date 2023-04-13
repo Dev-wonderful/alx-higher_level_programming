@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
+"""A module to create pascal's triangle"""
+
 
 def pascal_triangle(n):
+	"""Creating the triangle based on a number"""
     triangle = []
     if n <= 0:
         return triangle
