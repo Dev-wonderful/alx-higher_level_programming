@@ -41,3 +41,9 @@ class Student:
                     my_dict[key] = attr_dict[key]
 
             return my_dict
+
+    def reload_from_json(self, json):
+        """reload attributes of an instance using a dictionary
+                Args:
+                    json (dict): the dictionary to be used
+        """
