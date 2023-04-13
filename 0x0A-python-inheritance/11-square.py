@@ -22,4 +22,3 @@ class Square(Rectangle):
 
     def __repr__(self):
         return "[Square] {}/{}".format(self.__size, self.__size)
-
