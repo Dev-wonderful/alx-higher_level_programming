@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+"""A module to check for same class"""
+
+
+def is_kind_of_class(obj, a_class):
+    """checks for inheritance
+        Args:
+            obj: an object
+            a_class: a type of class
+        Returns:
+            bool: True if obj is of type a_class, False otherwise
+    """
+    return isinstance(obj, a_class)
