@@ -11,5 +11,5 @@ def save_to_json_file(my_obj, filename):
             my_obj (obj): The object to be serialized
             filename (str): The name of the JSON file
     """
-    with open(filename, 'a', encoding="utf-8") as j_file:
+    with open(filename, 'w', encoding="utf-8") as j_file:
         json.dump(my_obj, j_file)
