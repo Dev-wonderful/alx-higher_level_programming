@@ -1,3 +1,3 @@
-## Python Input/Output
+Python Input/Output
 ---
 **Read, write and append files**
