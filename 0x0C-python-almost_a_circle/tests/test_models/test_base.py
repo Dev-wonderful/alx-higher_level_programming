@@ -14,6 +14,11 @@ from models.base import Base
 
 
 class TestBase(unittest.TestCase):
+
+    def test_instance(self):
+        b1 = Base()
+        self.assertIsInstance(b1, Base)
+
     def test_id(self):
         b1 = Base()
         b2 = Base()

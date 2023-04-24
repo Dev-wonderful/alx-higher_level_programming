@@ -21,6 +21,11 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def __str__(self):
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                self.id, self.__x, self.__y,
+                                                self.__width, self.__height)
+
     @property
     def width(self) -> int:
         return self.__width
@@ -72,3 +77,17 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = value
+
+    def area(self):
+        return self.__width * self.__height
+
+    def display(self):
+        for vertical_space in range(self.__y):
+            print()
+        for height in range(self.__height):
+            hor = [" "] * self.__x
+            width = ["#"] * self.__width
+            hor += width
+            for value in hor:
+                print("{}".format(value), end="")
+            print()
