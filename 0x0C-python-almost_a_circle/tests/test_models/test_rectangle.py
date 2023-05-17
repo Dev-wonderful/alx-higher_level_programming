@@ -3,6 +3,11 @@ from models.rectangle import Rectangle
 
 
 class TestRectangle(unittest.TestCase):
+
+    def test_instance(self):
+        r1 = Rectangle(3, 5)
+        self.assertIsInstance(r1, Rectangle)
+
     def test_rect_arg(self):
         r1 = Rectangle(1, 2, 3, 4)
         r2 = Rectangle(3, 5)
@@ -16,6 +21,18 @@ class TestRectangle(unittest.TestCase):
         self.assertRaises(ValueError, r3, 1, 0)
         self.assertRaises(ValueError, r3, 1, 2, -1)
         self.assertRaises(ValueError, r3, 1, 2, 3, -1)
+
+    def test_area(self):
+        r1 = Rectangle(3, 5)
+        self.assertEqual(r1.area(), 3 * 5)
+
+    def test_rect_str(self):
+        # unittest.TestCase.id(self)
+        r1 = Rectangle(4, 6, 2, 1, 12)
+        r2 = Rectangle(4, 6, 2, 1)
+        self.longMessage = True
+        self.assertEqual(str(r1), "[Rectangle] (12) 2/1 - 4/6")
+        self.assertEqual(str(r2), "[Rectangle] (14) 2/1 - 4/6")
 
 
 if __name__ == '__main__':
