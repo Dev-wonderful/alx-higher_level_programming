@@ -1,3 +1,4 @@
+-- Dexter genres
 SELECT tv_genres.name
 FROM tv_genres
 JOIN tv_show_genres
