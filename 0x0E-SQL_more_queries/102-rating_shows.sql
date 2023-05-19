@@ -1,5 +1,4 @@
 -- show overall ratings
-USE `hbtn_0d_tvshows_rate`;
 SELECT tv_shows.title, SUM(`rate`) AS rating
 FROM `tv_show_ratings`
 JOIN `tv_shows`

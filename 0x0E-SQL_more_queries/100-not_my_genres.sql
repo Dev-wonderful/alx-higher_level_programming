@@ -1,5 +1,4 @@
 -- All genres not linked to the Dexter show
-USE `hbtn_0d_tvshows`;
 SELECT `name`
 FROM `tv_genres`
 WHERE `name` NOT IN (

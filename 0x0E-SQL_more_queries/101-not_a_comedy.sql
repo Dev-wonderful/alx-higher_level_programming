@@ -1,5 +1,4 @@
 -- not a comedy show, All shows that aren't comedy shows
-USE `hbtn_0d_tvshows`;
 SELECT `title`
 FROM `tv_shows`
 WHERE `title` NOT IN (
