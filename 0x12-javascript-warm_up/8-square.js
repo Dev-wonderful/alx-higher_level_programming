@@ -7,7 +7,7 @@ if (value) {
   for (let i = 0; i < value; i++) {
     square = '';
     for (let j = 0; j < value; j++) {
-      square += 'x';
+      square += 'X';
     }
     console.log(square);
   }
