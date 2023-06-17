@@ -14,7 +14,7 @@
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="494cb890-5ab6-4b31-b96d-c0a627833ebc">
       <console name="Connection" type="STANDARD" schema="hbtn_0e_0_usa" session="Main"><![CDATA[use hbtn_0e_0_usa;
-select * from states;]]></console>
+SELECT * FROM states ORDER BY id ASC]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
