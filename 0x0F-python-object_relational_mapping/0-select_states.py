@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module to connect to MySQL Database and run a query"""
 import MySQLdb
 import sys
 
