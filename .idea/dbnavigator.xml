@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="494cb890-5ab6-4b31-b96d-c0a627833ebc">
-      <console name="Connection" type="STANDARD" schema="hbtn_0e_0_usa" session="Main"><![CDATA[SELECT * FROM states WHERE `name` LIKE'N%' COLLATE Latin1_General_CS_AS ORDER BY id ASC]]></console>
+      <console name="Connection" type="STANDARD" schema="hbtn_0e_0_usa" session="Main"><![CDATA[SELECT * FROM states WHERE `name` LIKE BINARY 'N%' ORDER BY id ASC]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
