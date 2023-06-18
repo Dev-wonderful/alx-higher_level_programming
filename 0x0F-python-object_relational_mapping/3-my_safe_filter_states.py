@@ -10,7 +10,11 @@ if __name__ == '__main__':
     injection = sys.argv[4].find(';')
     if injection == -1:
         cur = conn.cursor()
-        query = "SELECT * FROM states WHERE `name` = '{}'".format(sys.argv[4])
+        query = "SELECT * " \
+                "FROM states " \
+                "WHERE name " \
+                "LIKE BINARY '{}' " \
+                "ORDER BY states.id ASC".format(sys.argv[4])
         cur.execute(query)
         query_rows = cur.fetchall()
         for row in query_rows:
