@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""To fetch all states"""
+"""To fetch a states"""
 
 from sys import argv
 from model_state import Base, State

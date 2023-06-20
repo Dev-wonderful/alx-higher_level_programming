@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""To insert state"""
+"""To update by ID"""
 
 from sys import argv
 from model_state import Base, State
@@ -15,6 +15,6 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    Louisiana = State(name="Louisiana")
-    session.add(Louisiana)
+    state = session.get(State, ident=2)
+    state.name = 'New Mexico'
     session.commit()
