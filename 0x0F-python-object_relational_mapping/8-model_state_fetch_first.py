@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""To fetch all states"""
+"""To fetch first state"""
 
 from sys import argv
 from model_state import Base, State
@@ -15,7 +15,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).limit(1)
+    states = session.query(State).order_by(State.id).limit(1)
 
     for state in states:
         print("{}: {}".format(state.id, state.name))
