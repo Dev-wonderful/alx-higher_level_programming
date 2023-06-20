@@ -26,6 +26,7 @@
     <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
+    <mapping file-url="file://$PROJECT_DIR$/0x0F-python-object_relational_mapping/14-model_city_fetch_by_state.sql" connection-id="494cb890-5ab6-4b31-b96d-c0a627833ebc" session-id="MAIN" current-schema="mysql" />
     <mapping file-url="file://$PROJECT_DIR$/0x0F-python-object_relational_mapping/0-select_states.sql" connection-id="494cb890-5ab6-4b31-b96d-c0a627833ebc" session-id="MAIN" current-schema="hbtn_0e_0_usa" />
     <mapping file-url="file://$PROJECT_DIR$/0x0F-python-object_relational_mapping/4-cities_by_state.sql" connection-id="494cb890-5ab6-4b31-b96d-c0a627833ebc" session-id="MAIN" current-schema="mysql" />
     <mapping file-url="file://$PROJECT_DIR$/0x0F-python-object_relational_mapping/6-model_state.sql" connection-id="494cb890-5ab6-4b31-b96d-c0a627833ebc" session-id="POOL" current-schema="mysql" />
