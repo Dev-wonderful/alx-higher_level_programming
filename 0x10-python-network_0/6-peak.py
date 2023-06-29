@@ -2,7 +2,7 @@
 """Returns the peak in an array"""
 
 
-def find_peak(landscape):
+def find_peak(landscape=[]):
     """peak function"""
     if len(landscape) == 0:
         return None
@@ -18,7 +18,9 @@ def find_peak(landscape):
         if curr > prev and curr > next_el:
             peak = curr
             return peak
-        if curr == next_el:
+        if curr == next_el and next_el <= peak:
             break
+        elif curr == next_el and next_el > peak:
+            return next_el
         i += 1
     return peak
