@@ -15,8 +15,8 @@ def find_peak(landscape):
             if landscape[i + 1] == landscape[i + 2]:
                 break
             peak = landscape[i + 1]
-        #elif landscape[i] == landscape[i + 1]:
-         #   break
+        elif landscape[i] == landscape[i + 1]:
+            break
         else:
             if i > 0 and landscape[i] > landscape[i - 1]:
                 break
