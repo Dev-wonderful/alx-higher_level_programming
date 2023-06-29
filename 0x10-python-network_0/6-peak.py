@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """Returns the peak in an array"""
 
 
