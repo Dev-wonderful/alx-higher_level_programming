@@ -17,6 +17,7 @@ def find_peak(landscape):
             next_el = landscape[i + 1]
         if curr > prev and curr > next_el:
             peak = curr
+            return peak
         if curr == next_el:
             break
         i += 1
