@@ -9,15 +9,16 @@ def find_peak(landscape):
     elif len(landscape) == 1:
         return landscape[0]
     peak = landscape[0]
-    i = 1
+    i = 0
     for scape in landscape:
-        prev = landscape[i - 1]
-        curr = landscape[i]
-        if len(landscape) > i + 1:
-            next_el = landscape[i + 1]
-        if curr > prev and curr > next_el:
-            peak = curr
-        if curr == next_el:
+        if landscape[i] < landscape[i + 1]:
+            if landscape[i + 1] == landscape[i + 2]:
+                break
+            peak = landscape[i + 1]
+        elif landscape[i] == landscape[i + 1]:
             break
+        else:
+            if i > 0 and landscape[i] > landscape[i - 1]:
+                break
         i += 1
     return peak
