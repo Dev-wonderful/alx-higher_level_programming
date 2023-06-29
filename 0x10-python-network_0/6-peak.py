@@ -10,7 +10,7 @@ def find_peak(landscape=[]):
         return landscape[0]
     peak = landscape[0]
     i = 1
-    for scape in landscape:
+    while i < len(landscape):
         prev = landscape[i - 1]
         curr = landscape[i]
         if len(landscape) > i + 1:
