@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import urllib.request as request
 
 req = request.Request('https://alx-intranet.hbtn.io/status')
