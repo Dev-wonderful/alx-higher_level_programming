@@ -7,9 +7,9 @@ if __name__ == '__main__':
     with request.urlopen(req) as response:
         value = response.read()
         print('Body response:')
-        print('\t- type: '.format(type(value)))
-        print('\t- content: '.format(value))
-        print('\t- utf8 content: '.format(value.decode()))
+        print('\t- type: {}'.format(type(value)))
+        print('\t- content: {}'.format(value))
+        print('\t- utf8 content: {}'.format(value.decode()))
         # print(f"""Body response:
         #     - type: {type(value)}
         #     - content: {value}
