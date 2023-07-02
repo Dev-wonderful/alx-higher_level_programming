@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""request header using requests module"""
+"""post request email using requests module"""
 import sys
 import requests
 
