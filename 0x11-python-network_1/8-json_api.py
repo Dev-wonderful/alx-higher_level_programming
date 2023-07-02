@@ -9,4 +9,4 @@ if __name__ == '__main__':
         value = sys.argv[1]
     q = {'q': value}
     response = requests.post('http://0.0.0.0:5000/search_user', data=q)
-    print('{}'.format(response.json))
+    print('{}'.format(response.json()))
