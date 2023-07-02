@@ -9,8 +9,8 @@ if __name__ == '__main__':
         value = sys.argv[1]
     q = {'q': value}
     response = requests.post('http://0.0.0.0:5000/search_user', data=q)
-    result = response.json()
     try:
+        result = response.json()
         if bool(result):
             print('[{}] {}'.format(result['id'], result['name']))
         else:
