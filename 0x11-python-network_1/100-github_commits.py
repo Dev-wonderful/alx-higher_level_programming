@@ -4,7 +4,8 @@ import requests
 from sys import argv
 
 if __name__ == '__main__':
-    url = 'https://api.github.com/repos/{1}/{0}/commits'.format(argv[1], argv[2])
+    url = 'https://api.github.com/repos/{1}/{0}/commits'.format(argv[1],
+                                                                argv[2])
     headers = {
         'Accept': 'application/vnd.github+json',
     }
@@ -12,5 +13,5 @@ if __name__ == '__main__':
     req = requests.get(url, headers=headers, params=params)
     for data in req.json():
         # print('{}'.format(data))
-        print('{}: {}'.format(data.get('sha'), 
-                                data.get('commit').get('author').get('name')))
+        print('{}: {}'.format(data.get('sha'),
+                              data.get('commit').get('author').get('name')))
