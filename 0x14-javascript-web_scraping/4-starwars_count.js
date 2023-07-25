@@ -2,7 +2,7 @@
 const request = require('request');
 const { argv } = require('process');
 
-const url = `${argv[2]}/18`;
+const url = `${argv[2]}18`;
 request(url, function (error, response, body) {
   if (error) {
     console.error(error);
