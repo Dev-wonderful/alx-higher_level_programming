@@ -8,7 +8,6 @@ function search (todos) {
     if (todo.completed === true) {
       if (!(todo.userId in completedTasks)) {
         completedTasks[todo.userId] = 0;
-        console.log('h');
       }
       completedTasks[todo.userId] += 1;
     }
